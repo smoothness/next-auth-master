@@ -6,6 +6,7 @@ import * as z from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 
 import { RegisterSchema } from '@/schemas'
+import { register } from '@/actions/register'
 import {
   Form,
   FormControl,
