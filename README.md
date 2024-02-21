@@ -1,24 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BCard Web App
 
 ## Getting Started
 
-First, run the development server:
+### After the project is cloned:
+
+1. Install all the node packages needed by running:
+
+```bash
+npm i
+```
+
+2. Install the Talwind extension for VSCode
+   Tailwind CSS IntelliSense
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Add components from shadcn
+
+Navigate to [Shadcn component UI library](https://ui.shadcn.com/docs/components)
+
+Select the component you want to use
+
+Add the component to the UI components in the project by running:
+
+```bash
+npx shadcn-ui@latest add button
+```
+
+In which button is the component you want to add. The component will be added to the `/components/ui/` directory.
 
 ## Learn More
 
