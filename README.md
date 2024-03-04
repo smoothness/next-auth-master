@@ -4,13 +4,25 @@
 
 ### After the project is cloned:
 
-1. Install all the node packages needed by running:
+1. Use the correct Node version, so install NVM first
+   Open [NVM Github](https://github.com/nvm-sh/nvm)
+
+2. Use NVM to use the correct Node version for this project, which will be 20.+
+   Since we have a `.nvmrc` file in the project you can just run:
+
+```bash
+nvm use
+```
+
+And nvm will pick the `.nvmrc` file and switch to the correct Node version.
+
+3. Install all the node packages needed by running:
 
 ```bash
 npm i
 ```
 
-2. Install the Talwind extension for VSCode
+4. Install the Talwind extension for VSCode
    Tailwind CSS IntelliSense
 
 Run the development server:
