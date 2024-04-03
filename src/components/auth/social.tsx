@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/button'
 function Social() {
 	// This is how you handle signin with social providers from a client component
 	// we can also do this in server components with an action like login or register which we already did
-	// or in the auth.ts file with the signIn function from NextAuth
+	// or in the auth.ts file with the signIn function from NextAuth which will be client side
 	function onClickHandler(provider: 'google' | 'facebook') {
 		signIn(provider, {
 			callbackUrl: DEFAULT_LOGIN_REDIRECT,
