@@ -10,7 +10,7 @@ import { getUserByEmail } from '@/data/user'
 import { generateVerificationToken } from '@/lib/tokens'
 import { sendVerificationEmail } from '@/lib/mail'
 
-export const login = async (values: z.infer<typeof LoginSchema>) => {
+export async function login(values: z.infer<typeof LoginSchema>) {
 	const validatedFields = LoginSchema.safeParse(values)
 
 	if (!validatedFields.success) {
