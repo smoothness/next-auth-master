@@ -11,7 +11,6 @@ import {
 } from '@/components/ui/dropdown-menu'
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
 
-import { logout } from '@/actions/logout'
 import { useCurrentUser } from '@/hooks/use-current-user'
 import LogoutButton from '@/components/auth/logout-button'
 
@@ -22,11 +21,13 @@ interface ButtonProps {
 function UserButton({ children }: ButtonProps) {
 	const user = useCurrentUser()
 
+	console.log('user', user)
+
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger>
 				<Avatar>
-					<AvatarImage src={user?.image || ''} alt="avatar" />
+					<AvatarImage src={user?.image || ''} />
 					<AvatarFallback className="bg-sky-500">
 						<FaUser className="text-white" />
 					</AvatarFallback>

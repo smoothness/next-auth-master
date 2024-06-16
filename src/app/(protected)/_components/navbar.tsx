@@ -40,7 +40,7 @@ export function Navbar() {
 					asChild
 					variant={pathnmame === '/dashboard' ? 'default' : 'outline'}
 				>
-					<Link href="/settings">Dashboard</Link>
+					<Link href="/dashboard">Dashboard</Link>
 				</Button>
 			</div>
 			<UserButton />

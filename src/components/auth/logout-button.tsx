@@ -4,11 +4,11 @@ import React from 'react'
 
 import { logout } from '@/actions/logout'
 
-interface ButtonProps {
+interface LogoutButtonProps {
 	children?: React.ReactNode
 }
 
-function LogoutButton({ children }: ButtonProps) {
+function LogoutButton({ children }: LogoutButtonProps) {
 	function onClick() {
 		logout()
 	}
