@@ -38,9 +38,9 @@ export function Navbar() {
 
 				<Button
 					asChild
-					variant={pathnmame === '/dashboard' ? 'default' : 'outline'}
+					variant={pathnmame === '/settings' ? 'default' : 'outline'}
 				>
-					<Link href="/dashboard">Dashboard</Link>
+					<Link href="/settings">Settings</Link>
 				</Button>
 			</div>
 			<UserButton />

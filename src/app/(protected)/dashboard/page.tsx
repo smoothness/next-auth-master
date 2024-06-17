@@ -1,7 +1,5 @@
 'use client'
 
-import { useSession } from 'next-auth/react'
-
 import { logout } from '@/actions/logout'
 import { useCurrentUser } from '@/hooks/use-current-user'
 
